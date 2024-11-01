@@ -1,19 +1,42 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+    content: [
+        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    theme: {
+        extend: {
+            colors: {
+                text: "var(--text)",
+                subText: "var(--subText)",
+                bgBtn: "var(--bgBtn)",
+                dotCard: "var(--dotCard)",
+                cardUserText: "var(--cardUserText)",
+                footerLink: "var(--footerLink)",
+                squareText: "var(--squareText)",
+                squareBorder: "var(--squareBorder)",
+                avatarName: "var(--avatarName)",
+                avatarJob: "var(--avatarJob)",
+                bgProfil: "var(--bgProfil)",
+                borderApp: "var(--borderApp)",
+                bgEmptyApp: "var(--bgEmptyApp)",
+                bgFollow: "var(--bgFollow)",
+                textFollow: "var(--textFollow)",
+                borderFollow: "var(--borderFollow)",
+                textFooter: "var(--textFooter)",
+                productTitle: "var(--productTitle)",
+                allInPlan: "var(--allInPlan)",
+                bgValue: "var(--bgValue)",
+                bgNotion: "var(--bgNotion)",
+                bgFooter: "var(--bgFooter)",
+            },
+            screens: {
+                mobile: "475px",
+            },
+        },
     },
-  },
-  plugins: [],
+    plugins: [],
 };
 export default config;

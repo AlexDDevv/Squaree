@@ -33,6 +33,11 @@ const config: Config = {
                 bgNotion: "var(--bgNotion)",
                 bgFooter: "var(--bgFooter)",
             },
+            fontFamily: {
+                dmSans: ["DM Sans", "sans-serif"],
+                manrope: ["Manrope", "sans-serif"],
+                inter: ["Inter", "sans-serif"],
+            },
             screens: {
                 mobile: "475px",
             },

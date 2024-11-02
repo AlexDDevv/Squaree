@@ -25,6 +25,7 @@ const config: Config = {
                 bgFollow: "var(--bgFollow)",
                 textFollow: "var(--textFollow)",
                 borderFollow: "var(--borderFollow)",
+                borderHeader: "var(--borderHeader)",
                 textFooter: "var(--textFooter)",
                 productTitle: "var(--productTitle)",
                 allInPlan: "var(--allInPlan)",

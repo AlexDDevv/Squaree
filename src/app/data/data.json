@@ -1,0 +1,20 @@
+{
+    "navLink": [
+        {
+            "content": "Features",
+            "link": "/"
+        },
+        {
+            "content": "Resources",
+            "link": "/"
+        },
+        {
+            "content": "Company",
+            "link": "/"
+        },
+        {
+            "content": "Contact Sales",
+            "link": "/"
+        }
+    ]
+}

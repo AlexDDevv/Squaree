@@ -32,11 +32,17 @@ const config: Config = {
                 bgValue: "var(--bgValue)",
                 bgNotion: "var(--bgNotion)",
                 bgFooter: "var(--bgFooter)",
+                purpleSquare: "var(--purpleSquare)",
+                grayGreenSquare: "var(--grayGreenSquare)",
+                beigeSquare: "var(--beigeSquare)",
             },
             fontFamily: {
                 dmSans: ["DM Sans", "sans-serif"],
                 manrope: ["Manrope", "sans-serif"],
                 inter: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+                large: "20px",
             },
             screens: {
                 mobile: "475px",

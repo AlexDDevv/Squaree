@@ -7,7 +7,7 @@ import { Search } from "lucide-react"
 
 export default function Header() {
     return (
-        <header className='max-w-[1116px] mx-auto rounded-[20px] flex items-center justify-between gap-5 border border-borderHeader p-5 mt-10 mb-28 shadow-[0_4px_22px_rgba(0,0,0,0.1)]'>
+        <header className='max-w-[1116px] mx-auto rounded-large flex items-center justify-between gap-5 border border-borderHeader p-5 mt-10 mb-28 shadow-[0_4px_22px_rgba(0,0,0,0.1)]'>
             <div>
                 <Link href={"/"} className='flex items-center justify-center gap-3'>
                     <Image

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import calendar from "../../../assets/images/Calendar.svg"
 import userCalendar from "../../../assets/images/userCalendar.svg"
 import data from "../../data/data.json"
-import CalendarSquare from '../CalendarSquare'
+import CalendarSquare from './CalendarSquare'
 
 export default function PurpleSquare() {
     return (

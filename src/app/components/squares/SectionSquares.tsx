@@ -1,9 +1,9 @@
 import React from 'react'
-import PinkSquare from './UI/PinkSquare'
-import PurpleSquare from './UI/PurpleSquare'
-import NotionSquare from './UI/NotionSquare'
-import GreenSquare from './UI/GreenSquare'
-import BeigeSquare from './UI/BeigeSquare'
+import PinkSquare from './PinkSquare'
+import PurpleSquare from './PurpleSquare'
+import NotionSquare from './NotionSquare'
+import GreenSquare from './GreenSquare'
+import BeigeSquare from './BeigeSquare'
 
 export default function SectionSquares() {
     return (

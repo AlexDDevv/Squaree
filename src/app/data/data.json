@@ -32,5 +32,39 @@
             "content": "Marketing",
             "time": "02:00 - 02:30 PM"
         }
+    ],
+    "partnersLogo": [
+        {
+            "src": "/logoFluid.svg",
+            "brand": "Fluid",
+            "width": 172,
+            "height": 46
+        },
+        {
+            "src": "/logoHikkeno.svg",
+            "brand": "Hikkeno",
+            "width": 173,
+            "height": 46
+        },
+        {
+            "src": "/logoBubble.svg",
+            "brand": "Bubble",
+            "width": 149,
+            "height": 46
+        }
+    ],
+    "growthData": [
+        {
+            "purcentage": 200,
+            "content": "Increase in new pipeline generated"
+        },
+        {
+            "purcentage": 70,
+            "content": "Increase in form workforce"
+        },
+        {
+            "purcentage": 40,
+            "content": "Decrease in cost per lead"
+        }
     ]
 }

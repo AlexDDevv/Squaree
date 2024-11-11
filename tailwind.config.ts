@@ -44,6 +44,15 @@ const config: Config = {
             borderRadius: {
                 large: "20px",
             },
+            animation: {
+                marquee: "marquee var(--duration) linear infinite",
+            },
+            keyframes: {
+                marquee: {
+                    from: { transform: "translateX(0)" },
+                    to: { transform: "translateX(-100%)" },
+                },
+            },
             screens: {
                 mobile: "475px",
             },

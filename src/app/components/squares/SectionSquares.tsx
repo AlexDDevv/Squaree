@@ -7,7 +7,7 @@ import BeigeSquare from './BeigeSquare'
 
 export default function SectionSquares() {
     return (
-        <section className='max-w-[1440px] mx-auto mb-20 relative'>
+        <section className='max-w-[1440px] h-[665px] mx-auto mb-20 relative'>
             <PinkSquare />
             <PurpleSquare />
             <NotionSquare />

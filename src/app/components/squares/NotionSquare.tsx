@@ -3,7 +3,7 @@ import notion from "../../../assets/images/notion.svg"
 
 export default function NotionSquare() {
     return (
-        <div className='bg-text rounded-large max-w-[366px] px-7  py-8'>
+        <div className='bg-text rounded-large max-w-[366px] px-7 py-8 absolute top-0 left-[780px]'>
             <div className='flex items-center gap-5'>
                 <div className='bg-bgNotion rounded-3xl w-[77px] h-[77px]'>
                     <Image

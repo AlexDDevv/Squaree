@@ -38,7 +38,7 @@ export default function GrowthCurve() {
                     stroke="#F2B53C"
                     strokeWidth="2.13023"
                     initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
+                    whileInView={{ scale: 1 }}
                     transition={{
                         delay: ellipse.delay * 4,
                         duration: 0.8,

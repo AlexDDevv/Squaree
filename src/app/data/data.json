@@ -16,5 +16,21 @@
             "content": "Contact Sales",
             "link": "/"
         }
+    ],
+    "calendarData": [
+        {
+            "background": "bg-grayGreenSquare",
+            "month": "Feb",
+            "day": "28",
+            "content": "Review sync",
+            "time": "12:00 - 01:30 PM"
+        },
+        {
+            "background": "bg-purpleSquare",
+            "month": "Mar",
+            "day": "02",
+            "content": "Marketing",
+            "time": "02:00 - 02:30 PM"
+        }
     ]
 }

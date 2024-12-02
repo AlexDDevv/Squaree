@@ -66,5 +66,54 @@
             "purcentage": 40,
             "content": "Decrease in cost per lead"
         }
+    ],
+    "squareTool": [
+        {
+            "src": "/notion.svg",
+            "name": "Notion",
+            "order": 2,
+            "width": 52,
+            "height": 52
+        },
+        {
+            "src": "/slack.svg",
+            "name": "Slack",
+            "order": 3,
+            "width": 56,
+            "height": 56
+        },
+        {
+            "src": "/zapier.svg",
+            "name": "Zapier",
+            "order": 4,
+            "width": 52,
+            "height": 52
+        },
+        {
+            "src": "/evernote.svg",
+            "name": "Evernote",
+            "order": 7,
+            "width": 50,
+            "height": 60
+        },
+        {
+            "src": "/figma.svg",
+            "name": "Figma",
+            "order": 8,
+            "width": 39,
+            "height": 56
+        },
+        {
+            "order": 1
+        },
+        {
+            "order": 5
+        },
+        {
+            "order": 6
+        },
+        {
+            "order": 9
+        }
     ]
 }

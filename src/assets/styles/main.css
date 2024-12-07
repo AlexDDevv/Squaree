@@ -1,0 +1,24 @@
+.gridArea {
+    grid-template-areas:
+        "a b b"
+        "c c d";
+
+    > div {
+        &:first-child {
+            grid-area: a;
+            width: 460px;
+        }
+        &:nth-child(2) {
+            grid-area: b;
+            width: 620px;
+        }
+        &:nth-child(3) {
+            grid-area: c;
+            width: 620px;
+        }
+        &:last-child {
+            grid-area: d;
+            width: 460px;
+        }
+    }
+}

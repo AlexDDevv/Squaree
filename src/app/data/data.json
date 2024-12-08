@@ -145,5 +145,36 @@
             "name": "John Master",
             "job": "Ceo, Whyle"
         }
+    ],
+    "pricing": [
+        {
+            "subscription": "Free",
+            "price": "$0",
+            "description": "Description of the tier list will go here, copy should be concise and impactful.",
+            "advantages": [
+                "Access to All Features",
+                "20% discount on backorders",
+                "Domain Name Appraisal",
+                "10 Social Profiles"
+            ],
+            "CTA": "Try for Free"
+        },
+        {
+            "subscription": "Pro",
+            "priceMonth": "$12",
+            "priceYear": "$122.5",
+            "monthly": "/month",
+            "yearly": "/year",
+            "description": "Description of the tier list will go here, copy should be concise and impactful.",
+            "advantages": [
+                "Access to All Features",
+                "20% discount on backorders",
+                "Domain Name Appraisal",
+                "10 Social Profiles",
+                "Calendar View",
+                "24/7 Support"
+            ],
+            "CTA": "Subscribe Now"
+        }
     ]
 }

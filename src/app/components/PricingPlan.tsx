@@ -2,14 +2,14 @@ import React, { useState } from "react";
 
 type PricingPlanProps = {
     subscription: string;
-    price: string;
-    priceMonth: string;
-    priceYear: string;
-    perMonth: string;
-    perYear: string;
-    yearly: string;
+    price?: string;
+    priceMonth?: string;
+    priceYear?: string;
+    perMonth?: string;
+    perYear?: string;
+    yearly: boolean;
     description: string;
-    advantages: [string];
+    advantages: string[];
     CTA: string;
 };
 

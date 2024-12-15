@@ -38,7 +38,7 @@ export default function ExploreBtn({ isHover, handleHover }: ExploreBtnProps) {
                 className={`bg-bgBtn rounded-full flex items-center justify-center p-5 cursor-pointer transition-all duration-500 ease-in-out ${
                     isHover ? "p-0" : ""
                 }`}
-                onMouseEnter={() => handleHover}
+                onMouseEnter={handleHover}
             >
                 <ArrowRight className="text-white h-4 w-4" />
             </div>

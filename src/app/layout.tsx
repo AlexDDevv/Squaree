@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import "../assets/styles/globals.css";
+import "../assets/styles/main.css";
 
 export const metadata: Metadata = {
     title: "Squaree",
-    description: "Réalisation du challenge Squaree de la plateforme dev Spikes.",
+    description:
+        "Réalisation du challenge Squaree de la plateforme dev Spikes.",
 };
 
 export default function RootLayout({
@@ -13,9 +15,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body>
-                {children}
-            </body>
+            <body className="overflow-x-hidden">{children}</body>
         </html>
     );
 }

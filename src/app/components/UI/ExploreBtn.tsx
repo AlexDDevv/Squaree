@@ -35,8 +35,8 @@ export default function ExploreBtn({ isHover, handleHover }: ExploreBtnProps) {
                 Explore our way
             </motion.span>
             <div
-                className={`bg-bgBtn rounded-full flex items-center justify-center p-5 cursor-pointer transition-all duration-500 ease-in-out ${
-                    isHover ? "p-0" : ""
+                className={`bg-bgBtn rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 ease-in-out ${
+                    isHover ? "p-0" : "p-5"
                 }`}
                 onMouseEnter={handleHover}
             >

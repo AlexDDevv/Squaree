@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type TestimonialsProps = {
     title: string;
@@ -7,6 +8,7 @@ type TestimonialsProps = {
     avatar: string;
     name: string;
     job: string;
+    number: number;
 };
 
 export default function Testimonials({
@@ -15,9 +17,35 @@ export default function Testimonials({
     avatar,
     name,
     job,
+    number,
 }: TestimonialsProps) {
+    const appearAnimation = {
+        initial: {
+            opacity: 0,
+            translateX: number <= 2 ? "-100px" : "100px",
+        },
+        whileInView: (custom: number) => ({
+            opacity: 1,
+            translateX: 0,
+            transition: {
+                duration: 0.5,
+                delay: custom * 0.25,
+                ease: "easeInOut",
+            },
+        }),
+        exit: { opacity: 1, translateX: 0 },
+    };
+
     return (
-        <div className="px-8 pt-8 pb-7 border border-[rgba(62,62,62,0.15)] rounded-large bg-gradient-to-br from-white to-[#F1F1F1]">
+        <motion.div
+            className="px-8 pt-8 pb-7 border border-[rgba(62,62,62,0.15)] rounded-large bg-gradient-to-br from-white to-[#F1F1F1]"
+            custom={number}
+            initial={"initial"}
+            whileInView="whileInView"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={appearAnimation}
+            exit="exit"
+        >
             <h3 className="font-manrope font-bold text-2xl text-cardUserText mb-7">
                 {title}
             </h3>
@@ -42,6 +70,6 @@ export default function Testimonials({
                     </h5>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }

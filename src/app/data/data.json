@@ -122,28 +122,32 @@
             "content": "All eFounders teams have moved to Cycle for all things product management and it is truly a game-changer.",
             "avatar": "/avatarYellow.svg",
             "name": "John Master",
-            "job": "Director, Blue"
+            "job": "Director, Blue",
+            "number": 1
         },
         {
             "title": "Convenient for searching apartments",
             "content": "Cycle makes it easy to contact the most relevant users whenever I need feedback on a new product initiative. It helps me capture all the necessary customer context without friction.",
             "avatar": "/avatarBlue.svg",
             "name": "John Master",
-            "job": "Ceo, Jinx"
+            "job": "Ceo, Jinx",
+            "number": 2
         },
         {
             "title": "It feels much more safe",
             "content": "As a company with a strong Slack culture, it's important that we find ways to meet our champions where they are, and Channeled allows us to do just that.",
             "avatar": "/avatarPink.svg",
             "name": "John Master",
-            "job": "Director, Fynx"
+            "job": "Director, Fynx",
+            "number": 3
         },
         {
             "title": "Secure search for all",
             "content": "All eFounders teams have moved to Cycle for all things product management and it is truly a game-changer.",
             "avatar": "/avatarRed.svg",
             "name": "John Master",
-            "job": "Ceo, Whyle"
+            "job": "Ceo, Whyle",
+            "number": 4
         }
     ],
     "pricing": [

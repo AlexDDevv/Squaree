@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 
 type SquareToolProps = {
     src?: string;
@@ -9,6 +10,8 @@ type SquareToolProps = {
     width?: number;
     height?: number;
 };
+
+const MotionImage = motion(Image);
 
 export default function SquareTool({
     src,
@@ -32,24 +35,63 @@ export default function SquareTool({
         12: "order-12",
     };
 
+    const [isHovered, setIsHovered] = useState(false);
+
+    const scaleAnimation = {
+        initial: { opacity: 1, scale: 1 },
+        animate: {
+            scale: isHovered ? [1, 1.15, 1] : 1,
+        },
+        transition: {
+            scale: {
+                duration: 1,
+                repeat: isHovered ? Infinity : 0,
+                ease: "easeInOut",
+            },
+            opacity: { duration: 0.5, ease: "easeInOut" },
+        },
+    };
+
+    const appearAnimation = {
+        initial: { opacity: 0 },
+        whileInView: (custom: number) => ({
+            opacity: 1,
+            transition: {
+                duration: 0.2,
+                delay: custom * 0.15,
+                ease: "easeInOut",
+            },
+        }),
+    };
+
     return (
-        <div
+        <motion.div
             className={clsx(
-                src ? "bg-white" : "bg-bgEmptyApp opacity-10",
+                src
+                    ? "bg-white border-[rgba(62,62,62,0.15)] transition-colors duration-200 ease-in-out hover:border-[rgba(62,62,62,0.5)]"
+                    : "bg-[rgb(202,202,202,0.1)] border-[rgba(62,62,62,0.1)]",
                 orderClasses[order] || "",
-                "w-[120px] h-[120px] rounded-[28px] border-2",
-                src ? "border-[rgb(62,62,62,0.1)]" : "border-borderApp",
-                "flex items-center justify-center"
+                "flex items-center justify-center w-[120px] h-[120px] rounded-[28px] border-2"
             )}
+            custom={order}
+            initial="initial"
+            whileInView="whileInView"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={appearAnimation}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
         >
             {src && (
-                <Image
+                <MotionImage
                     src={src}
                     alt={`Logo de l'outil ${name}`}
                     width={width}
                     height={height}
+                    initial={scaleAnimation.initial}
+                    animate={scaleAnimation.animate}
+                    transition={scaleAnimation.transition}
                 />
             )}
-        </div>
+        </motion.div>
     );
 }

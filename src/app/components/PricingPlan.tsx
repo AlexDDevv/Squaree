@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 type PricingPlanProps = {
     subscription: string;
@@ -25,17 +25,8 @@ export default function PricingPlan({
     advantages,
     CTA,
 }: PricingPlanProps) {
-    const [selectedPlan, setSelectedPlan] = useState(false);
-
     return (
-        <div
-            className={`bg-gradient-to-br from-white to-[#F1F1F1] border-2 ${
-                selectedPlan
-                    ? "border-bgBtn shadow-[10px_14px_110px_#FFF7E7]"
-                    : "border-[rgba(62,62,62,0.15)]"
-            } rounded-large flex flex-col gap-8 p-7 w-[500px] cursor-pointer transition-all duration-200 ease-in-out hover:border-bgBtn hover:shadow-[10px_14px_110px_#FFF7E7]`}
-            onClick={() => setSelectedPlan(!selectedPlan)}
-        >
+        <div className="bg-gradient-to-br from-white to-[#F1F1F1] border-2 rounded-large flex flex-col gap-8 p-7 w-[500px] transition-all duration-200 ease-in-out hover:border-bgBtn hover:shadow-[10px_14px_110px_#FFF7E7]">
             <div className="flex flex-col gap-4 pb-8 border-b border-[rgba(36,36,36,0.20)]">
                 <h3 className="font-dmSans font-bold text-text text-[34px]">
                     {subscription}
@@ -88,7 +79,7 @@ export default function PricingPlan({
             </div>
             <button
                 type="button"
-                className="font-manrope font-semibold text-lg text-white bg-bgBtn rounded-full py-3 px-6"
+                className="font-manrope font-semibold text-lg text-white bg-bgBtn rounded-full py-3 px-6 border-2 border-bgBtn transition-all duration-200 ease-in-out hover:bg-transparent hover:text-bgBtn hover:shadow-[5px_10px_50px_#FFF7E7]"
             >
                 {CTA}
             </button>

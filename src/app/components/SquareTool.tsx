@@ -71,7 +71,8 @@ export default function SquareTool({
                     ? "bg-white border-[rgba(62,62,62,0.15)] transition-colors duration-200 ease-in-out hover:border-[rgba(62,62,62,0.5)]"
                     : "bg-[rgb(202,202,202,0.1)] border-[rgba(62,62,62,0.1)]",
                 orderClasses[order] || "",
-                "flex items-center justify-center w-[120px] h-[120px] rounded-[28px] border-2"
+                "flex items-center justify-center w-[120px] h-[120px] rounded-[28px] border-2 max-sm:h-24 max-sm:w-24 max-sm:rounded-large",
+                !src ? "max-xl:hidden" : ""
             )}
             custom={order}
             initial="initial"
@@ -90,6 +91,7 @@ export default function SquareTool({
                     initial={scaleAnimation.initial}
                     animate={scaleAnimation.animate}
                     transition={scaleAnimation.transition}
+                    className="max-sm:max-w-10 max-sm:max-h-10"
                 />
             )}
         </motion.div>

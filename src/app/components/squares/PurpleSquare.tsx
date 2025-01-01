@@ -29,14 +29,14 @@ const bounceVariants = {
 export default function PurpleSquare() {
     return (
         <motion.div
-            className="absolute top-[80px] left-[360px]"
+            className="absolute top-[80px] left-[360px] max-xl:relative max-xl:inset-0"
             initial="hidden"
             animate="visible"
             exit="visible"
             variants={bounceVariants}
         >
             <div className="w-[366px] h-[384px] bg-purpleSquare rounded-large relative">
-                <div className="absolute top-7 right-7 bg-bgProfil py-2 px-4 rounded-full cursor-pointer">
+                <div className="absolute px-4 py-2 rounded-full cursor-pointer top-7 right-7 bg-bgProfil">
                     <Image src={calendar} alt="Logo d'un calendrier" />
                 </div>
                 <div className="px-7 pt-11 pb-3.5 flex items-center gap-6">
@@ -48,14 +48,14 @@ export default function PurpleSquare() {
                     </div>
                     <div>
                         <div className="mb-2.5">
-                            <h2 className="font-inter font-semibold text-2xl text-text">
+                            <h2 className="text-2xl font-semibold font-inter text-text">
                                 Moana
                             </h2>
-                            <p className="font-inter font-semibold text-2xl text-text">
+                            <p className="text-2xl font-semibold font-inter text-text">
                                 John
                             </p>
                         </div>
-                        <p className="font-inter font-medium text-sm text-text opacity-50">
+                        <p className="text-sm font-medium opacity-50 font-inter text-text">
                             5mins ago
                         </p>
                     </div>

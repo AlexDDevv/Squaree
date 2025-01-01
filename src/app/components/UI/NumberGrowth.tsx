@@ -44,7 +44,7 @@ function NumberGrowth({
 
     return (
         <span
-            className="inline-block tabular-nums tracking-wider font-dmSans font-bold text-6xl text-text"
+            className="inline-block tabular-nums tracking-wider font-dmSans font-bold text-6xl text-text max-lg:text-5xl max-sm:text-3xl max-mobile:text-xl"
             ref={ref}
         />
     );

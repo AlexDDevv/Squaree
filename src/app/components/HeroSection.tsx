@@ -12,9 +12,9 @@ export default function HeroSection() {
     };
 
     return (
-        <section className="max-w-[650px] mx-auto text-center mb-20 mt-60">
+        <section className="max-w-[650px] mx-auto text-center mb-20 mt-60 px-6">
             <motion.h1
-                className="font-dmSans font-bold text-[78px] text-text leading-[90px]"
+                className="font-dmSans font-bold text-7xl text-text leading-[90px] max-md:text-5xl max-md:leading-tight max-mobile:text-3xl"
                 custom={100}
                 variants={variants}
                 initial="initial"
@@ -28,7 +28,7 @@ export default function HeroSection() {
                 Predictable
             </motion.h1>
             <motion.span
-                className="font-dmSans font-bold text-[78px] text-text leading-[90px] mb-6 block"
+                className="font-dmSans font-bold text-7xl text-text leading-[90px] mb-6 block max-md:text-5xl max-md:leading-tight max-mobile:text-3xl max-md:mb-4"
                 custom={150}
                 variants={variants}
                 initial="initial"
@@ -42,7 +42,7 @@ export default function HeroSection() {
                 growth starts here
             </motion.span>
             <motion.p
-                className="font-manrope font-medium text-sm text-subText"
+                className="font-manrope font-medium text-sm text-subText max-md:max-w-[376px] max-md:mx-auto max-mobile:text-xs max-mobile:max-w-[325px] max-mobile:leading-normal"
                 custom={200}
                 variants={variants}
                 initial="initial"

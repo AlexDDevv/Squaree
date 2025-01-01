@@ -51,7 +51,7 @@ const config: Config = {
                 marquee: {
                     from: { transform: "translateX(0)" },
                     to: { transform: "translateX(-100%)" },
-                },
+                }
             },
             screens: {
                 mobile: "475px",

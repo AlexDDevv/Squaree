@@ -22,23 +22,23 @@ const scaleAnimation = {
 
 export default function TestimonialSection() {
     return (
-        <section className="flex flex-col items-center justify-center gap-14 max-w-[1100px] mx-auto mb-28">
+        <section className="flex flex-col items-center justify-center gap-14 mb-28 px-6">
             <motion.div
                 className="text-center"
                 initial={scaleAnimation.initial}
                 whileInView={scaleAnimation.animate}
                 exit={scaleAnimation.exit}
                 transition={scaleAnimation.transition}
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.25 }}
             >
-                <h2 className="font-dmSans font-bold text-text text-5xl mb-5">
+                <h2 className="font-dmSans font-bold text-text text-5xl mb-5 max-md:text-4xl max-mobile:text-2xl">
                     What squaree users say
                 </h2>
-                <p className="font-manrope font-semibold text-lg text-subText">
+                <p className="font-manrope font-semibold text-lg text-subText max-md:text-base max-mobile:text-xs">
                     Here is how homely can help you
                 </p>
             </motion.div>
-            <div className="grid gridArea gap-x-5 gap-y-7 px-[100px]">
+            <div className="grid gridArea gap-x-5 gap-y-7 max-md:flex max-md:flex-col">
                 {data.testimonials.map((item) => (
                     <Testimonials
                         key={item.number}

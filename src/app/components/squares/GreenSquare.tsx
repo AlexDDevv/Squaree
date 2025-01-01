@@ -27,17 +27,17 @@ const bounceVariants = {
 export default function GreenSquare() {
     return (
         <motion.div
-            className="absolute top-[210px] left-[800px]"
+            className="absolute top-[210px] left-[800px] max-xl:relative max-xl:inset-0 max-xl:h-full"
             initial="hidden"
             animate="visible"
             exit="visible"
             variants={bounceVariants}
         >
             <div className="w-[290px] h-[290px] bg-grayGreenSquare rounded-large relative flex flex-col justify-between p-7">
-                <button className="bg-bgProfil py-2 px-4 rounded-full absolute top-6 right-6 flex items-center justify-center">
+                <button className="absolute flex items-center justify-center px-4 py-2 rounded-full bg-bgProfil top-6 right-6">
                     <Link
                         href={"/"}
-                        className="font-bold font-manrope text-xs uppercase text-white tracking-widest"
+                        className="text-xs font-bold tracking-widest text-white uppercase font-manrope"
                     >
                         Value
                     </Link>
@@ -51,10 +51,10 @@ export default function GreenSquare() {
                     <Image src={curve} alt="Courbe" />
                 </div>
                 <div>
-                    <h4 className="font-inter text-lg text-productTitle">
+                    <h4 className="text-lg font-inter text-productTitle">
                         Product title
                     </h4>
-                    <p className="font-inter font-medium text-sm text-squareText">
+                    <p className="text-sm font-medium font-inter text-squareText">
                         Short description goes here
                     </p>
                 </div>

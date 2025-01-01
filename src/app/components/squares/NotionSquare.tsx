@@ -15,7 +15,7 @@ const animation = {
 export default function NotionSquare() {
     return (
         <motion.div
-            className="bg-text rounded-large max-w-[366px] px-7 py-8 absolute top-0 left-[780px]"
+            className="bg-text rounded-large max-w-[366px] px-7 py-8 absolute top-0 left-[780px] max-xl:relative max-xl:inset-0 max-xl:h-full"
             {...animation}
         >
             <div className="flex items-center gap-5">
@@ -31,7 +31,7 @@ export default function NotionSquare() {
                     <h3 className="font-inter font-semibold text-2xl text-white mb-2.5">
                         Clear roadmap
                     </h3>
-                    <p className="font-inter font-medium text-sm text-squareText">
+                    <p className="text-sm font-medium font-inter text-squareText">
                         notion.com
                     </p>
                 </div>

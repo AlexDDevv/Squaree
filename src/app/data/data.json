@@ -180,5 +180,35 @@
             ],
             "CTA": "Subscribe Now"
         }
+    ],
+    "footerLink": [
+        [
+            {
+                "link": "About"
+            },
+            {
+                "link": "Contact"
+            },
+            {
+                "link": "Blog"
+            },
+            {
+                "link": "Story"
+            }
+        ],
+        [
+            {
+                "link": "Company"
+            },
+            {
+                "link": "Product"
+            },
+            {
+                "link": "Press"
+            },
+            {
+                "link": "More"
+            }
+        ]
     ]
 }

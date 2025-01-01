@@ -9,6 +9,7 @@ import ToolSection from "./components/ToolSection";
 import TestimonialSection from "./components/TestimonialSection";
 import PricingSection from "./components/PricingSection";
 import Footer from "./components/Footer";
+import Newsletter from "./components/Newsletter";
 
 export default function Home() {
     return (
@@ -23,6 +24,7 @@ export default function Home() {
             <TestimonialSection />
             <PricingSection />
             <Footer />
+            <Newsletter />
         </>
     );
 }

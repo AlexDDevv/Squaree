@@ -38,7 +38,7 @@ export default function Testimonials({
 
     return (
         <motion.div
-            className="px-8 pt-8 pb-7 border border-[rgba(62,62,62,0.15)] rounded-large bg-gradient-to-br from-white to-[#F1F1F1]"
+            className="px-8 pt-8 pb-7 border border-[rgba(62,62,62,0.15)] rounded-large bg-gradient-to-br from-white to-[#F1F1F1] max-lg:px-6 max-lg:pt-6 max-lg:pb-5"
             custom={number}
             initial={"initial"}
             whileInView="whileInView"
@@ -46,10 +46,10 @@ export default function Testimonials({
             variants={appearAnimation}
             exit="exit"
         >
-            <h3 className="font-manrope font-bold text-2xl text-cardUserText mb-7">
+            <h3 className="font-manrope font-bold text-2xl text-cardUserText mb-7 max-lg:text-xl">
                 {title}
             </h3>
-            <p className="font-manrope font-medium text-cardUserText mb-7">
+            <p className="font-manrope font-medium text-cardUserText mb-7 max-lg:text-sm">
                 {content}
             </p>
             <div className="flex items-center gap-4">
@@ -62,10 +62,10 @@ export default function Testimonials({
                     />
                 </div>
                 <div>
-                    <h4 className="font-manrope font-medium text-avatarName">
+                    <h4 className="font-manrope font-medium text-avatarName max-lg:text-sm">
                         {name}
                     </h4>
-                    <h5 className="font-manrope font-medium text-sm text-avatarJob opacity-70">
+                    <h5 className="font-manrope font-medium text-sm text-avatarJob opacity-70 max-lg:text-xs">
                         {job}
                     </h5>
                 </div>

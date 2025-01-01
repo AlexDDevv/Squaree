@@ -1,34 +1,138 @@
 .gridArea {
-    grid-template-areas:
-        "a b b"
-        "c c d";
+  grid-template-areas:
+    "a b b"
+    "c c d";
 
-    > div {
-        &:first-child {
-            grid-area: a;
-            width: 460px;
-        }
-        &:nth-child(2) {
-            grid-area: b;
-            width: 620px;
-        }
-        &:nth-child(3) {
-            grid-area: c;
-            width: 620px;
-        }
-        &:last-child {
-            grid-area: d;
-            width: 460px;
-        }
+  > div {
+    &:first-child {
+      grid-area: a;
+      width: 460px;
+
+      @media screen and (max-width: 1170px) {
+        width: 100%;
+      }
     }
+
+    &:nth-child(2) {
+      grid-area: b;
+      width: 620px;
+
+      @media screen and (max-width: 1170px) {
+        width: 100%;
+      }
+    }
+
+    &:nth-child(3) {
+      grid-area: c;
+      width: 620px;
+
+      @media screen and (max-width: 1170px) {
+        width: 100%;
+      }
+    }
+
+    &:last-child {
+      grid-area: d;
+      width: 460px;
+
+      @media screen and (max-width: 1170px) {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .custom-gradient {
-    background: linear-gradient(
-        225deg,
-        white 10%,
-        rgba(255, 255, 255, 0) 20%,
-        rgba(255, 255, 255, 0) 80%,
-        white 90%
-    );
+  background: linear-gradient(
+    225deg,
+    white 10%,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0) 80%,
+    white 90%
+  );
+}
+
+@keyframes slideOut {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+.addAfter {
+  &::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    height: 100px;
+    width: 30px;
+    transform: rotate(-30deg);
+    animation: slideOut 0.5s cubic-bezier(0, 0, 0.2, 1) forwards;
+  }
+
+  &:hover {
+    &::after {
+      animation: slideIn 0.5s cubic-bezier(0, 0, 0.2, 1) forwards;
+    }
+  }
+}
+
+.underlineAfter {
+  padding-bottom: 2px;
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+    background-color: #f2b53c;
+    border-radius: 100px;
+    transition: width 0.5s cubic-bezier(0.6, 0.04, 0.8, 0.6);
+    transform: rotate(-2deg);
+  }
+}
+
+.addBefore {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    height: 70px;
+    width: 10px;
+    transform: rotate(-30deg);
+    animation: slideOut 0.5s cubic-bezier(0, 0, 0.2, 1) forwards;
+  }
+
+  &:hover {
+    &::before {
+      animation: slideIn 0.5s cubic-bezier(0, 0, 0.2, 1) forwards;
+    }
+  }
 }

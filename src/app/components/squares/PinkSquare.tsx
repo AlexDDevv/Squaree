@@ -32,7 +32,7 @@ const cardWaveVariants = {
 export default function PinkSquare() {
     return (
         <motion.div
-            className="absolute left-0 top-[30px]"
+            className="absolute left-0 top-[30px] max-xl:relative max-xl:inset-0 max-xl:h-full"
             initial="hidden"
             animate="visible"
             exit="hidden"
@@ -47,10 +47,10 @@ export default function PinkSquare() {
                     src={pinkSquare}
                     alt="Image de fond pour accéder au profil"
                 />
-                <button className="bg-bgProfil py-2 px-4 rounded-full absolute top-6 left-6 flex items-center justify-center">
+                <button className="absolute flex items-center justify-center px-4 py-2 rounded-full bg-bgProfil top-6 left-6">
                     <Link
                         href={"/"}
-                        className="font-bold font-manrope text-xs uppercase text-white tracking-widest"
+                        className="text-xs font-bold tracking-widest text-white uppercase font-manrope"
                     >
                         Profile
                     </Link>

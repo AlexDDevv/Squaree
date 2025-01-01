@@ -10,14 +10,13 @@ type ExploreBtnProps = {
 export default function ExploreBtn({ isHover, handleHover }: ExploreBtnProps) {
     return (
         <motion.button
-            className={`rounded-full flex items-center justify-center gap-1 w-0 h-full transition-all duration-500 ease-in-out ${
-                isHover ? "w-[200px] bg-bgBtn" : ""
-            }`}
+            className={`rounded-full flex items-center justify-center gap-1 w-0 h-full transition-all duration-500 ease-in-out ${isHover ? "w-[200px] bg-bgBtn" : ""
+                }`}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             exit={{ opacity: 1 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.25 }}
         >
             <motion.span
                 className=" left-14 font-inter font-semibold text-white"
@@ -35,9 +34,8 @@ export default function ExploreBtn({ isHover, handleHover }: ExploreBtnProps) {
                 Explore our way
             </motion.span>
             <div
-                className={`bg-bgBtn rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 ease-in-out ${
-                    isHover ? "p-0" : "p-5"
-                }`}
+                className={`bg-bgBtn rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 ease-in-out ${isHover ? "p-0" : "p-5"
+                    }`}
                 onMouseEnter={handleHover}
             >
                 <ArrowRight className="text-white h-4 w-4" />

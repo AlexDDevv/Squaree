@@ -33,7 +33,7 @@ const floatAnimation = {
 export default function BeigeSquare() {
     return (
         <motion.div
-            className="absolute top-[232px] right-[-140px]"
+            className="absolute top-[232px] right-[-140px] max-xl:relative max-xl:inset-0"
             initial={{ opacity: 0, translateX: "100px" }}
             exit={{ opacity: 1, translateX: "0" }}
             {...floatAnimation}
@@ -41,10 +41,10 @@ export default function BeigeSquare() {
         >
             <div className="bg-beigeSquare h-[434px] w-[407px] rounded-large px-7 py-8 flex flex-col justify-between relative">
                 <div className="flex items-center justify-between">
-                    <button className="bg-bgValue py-2 px-4 rounded-full flex items-center justify-center">
+                    <button className="flex items-center justify-center px-4 py-2 rounded-full bg-bgValue">
                         <Link
                             href={"/"}
-                            className="font-bold font-manrope text-xs uppercase text-white tracking-widest"
+                            className="text-xs font-bold tracking-widest text-white uppercase font-manrope"
                         >
                             Value
                         </Link>
@@ -52,24 +52,24 @@ export default function BeigeSquare() {
                     <button className="bg-bgProfil py-2 px-4 rounded-full flex items-center justify-center gap-1.5">
                         <Link
                             href={"/"}
-                            className="font-bold font-manrope text-xs uppercase text-white tracking-widest"
+                            className="text-xs font-bold tracking-widest text-white uppercase font-manrope"
                         >
                             Daily visits
                         </Link>
-                        <ChevronDown className="text-white h-4 w-4" />
+                        <ChevronDown className="w-4 h-4 text-white" />
                     </button>
                 </div>
                 <div className="text-center">
-                    <h3 className="font-inter font-semibold text-text text-4xl mb-3">
+                    <h3 className="mb-3 text-4xl font-semibold font-inter text-text">
                         $5476
                     </h3>
-                    <p className="font-inter text-sm text-text">
+                    <p className="text-sm font-inter text-text">
                         Spending This Week
                     </p>
                 </div>
                 <div>
-                    <h4 className="font-inter text-lg text-text">Work force</h4>
-                    <p className="font-inter font-medium text-sm text-text">
+                    <h4 className="text-lg font-inter text-text">Work force</h4>
+                    <p className="text-sm font-medium font-inter text-text">
                         Short description goes here
                     </p>
                 </div>

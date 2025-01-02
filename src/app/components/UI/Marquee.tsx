@@ -3,7 +3,7 @@ import data from "../../data/data.json";
 
 interface MarqueeProps {
     repeat?: number;
-    [key: string]: any;
+    [key: number]: [number];
 }
 
 function Marquee({ repeat = 6, ...props }: MarqueeProps) {

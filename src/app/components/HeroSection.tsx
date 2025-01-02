@@ -54,7 +54,7 @@ export default function HeroSection() {
                 }}
             >
                 Squaree helps users to go from Zero to Hero with Pockets
-                flow&apos;'s simple platform that helps creators like you sell
+                flow&apos;s simple platform that helps creators like you sell
                 their digital products online.
             </motion.p>
         </section>
